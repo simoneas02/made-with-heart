@@ -4,6 +4,7 @@
 
 [![Travis CI Status](https://travis-ci.org/simoneas02/made-with-heart.svg?branch=master)](https://travis-ci.org/simoneas02/made-with-heart)
 ![bower](https://img.shields.io/bower/v/made-with-heart.svg)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/simoneas02/made-with-heart)
 
 ## How to install and use:
 
