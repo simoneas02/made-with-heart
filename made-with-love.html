@@ -3,13 +3,68 @@
 <dom-module id="made-with-love">
   <template>
     <style>
+      :host {
+        --made-with-love-color-default: #000;
+        --made-with-love-heart-color-default: #6309a0;
+        --made-with-love-heart-size-default: 10px;
+        color: var(--made-with-love-color, --made-with-love-color-default);
+        @apply (--made-with-love-text);
+      }
+
+      .heart {
+        margin: 0 5px;
+        width: var(--made-with-love-heart-size, var(--made-with-love-heart-size-default));
+        height: var(--made-with-love-heart-size, var(--made-with-love-heart-size-default));
+        background-color: var(--made-with-love-heart-color, var(--made-with-love-heart-color-default));
+        position: relative;
+        display: inline-block;
+        animation: pulse .5s infinite alternate ease-in;
+      }
+
+      .heart:before {
+        width: var(--made-with-love-heart-size, var(--made-with-love-heart-size-default));
+        height: var(--made-with-love-heart-size, var(--made-with-love-heart-size-default));
+        border-radius: 50%;
+        background-color: var(--made-with-love-heart-color, var(--made-with-love-heart-color-default));
+        position: absolute;
+        top: 0;
+        left: 50%;
+        content: "";
+      }
+
+      .heart:after {
+        width: var(--made-with-love-heart-size, var(--made-with-love-heart-size-default));
+        height: var(--made-with-love-heart-size, var(--made-with-love-heart-size-default));
+        border-radius: 50%;
+        background-color: var(--made-with-love-heart-color, var(--made-with-love-heart-color-default));
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: "";
+      }
+
+      @keyframes pulse {
+          from {transform: rotate(-135deg) scale(1);}
+          to   {transform: rotate(-135deg) scale(1.2);}
+      }
+
+      a {
+        color: var(--made-with-love-color, var(--made-with-love-color-default));
+        text-decoration: none;
+      }
     </style>
-    <p>Made with</p>
+    Made with <span class="heart"></span> by <a href={{href}} target="_blank"><content></content></a>
   </template>
 
   <script>
     Polymer({
-      is: "made-with-love"
+      is: "made-with-love",
+      properties:{
+        href: {
+          type: String,
+          value: "#"
+        }
+      }
     })
   </script>
 </dom-module>
