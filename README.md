@@ -51,7 +51,7 @@ Property  | Type        | Default   | Description
 The following custom properties and mixins are available for styling:
 
 Custom property               | Default  | Description
----                           | ---      | ---
+---                           | :---:    | ---
 --made-with-love-color        | #000     | Text color
 --made-with-love-text         | {}       | Text style
 --made-with-love-heart-color  | #6309a0  | Heart color
