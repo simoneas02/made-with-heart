@@ -2,8 +2,8 @@
 
 > <:purple_heart: /> A Polymer element for show your love!.
 
-[![Travis CI Status](https://travis-ci.org/simoneas02/made-with-love.svg?branch=master)](https://travis-ci.org/simoneas02/made-with-love)
-![bower](https://img.shields.io/bower/v/made-with-love.svg)
+[![Travis CI Status](https://travis-ci.org/simoneas02/made-with-heart.svg?branch=master)](https://travis-ci.org/simoneas02/made-with-heart)
+![bower](https://img.shields.io/bower/v/made-with-heart.svg)
 
 ## How to install and use:
 
@@ -15,13 +15,13 @@
 **1 -** Install the element using [Bower](http://bower.io/):
 
 ```sh
-$ bower install made-with-love --save
+$ bower install made-with-heart --save
 ```
 
 **2 -** Import the element:
 
 ```html
-<link rel="import" href="bower_components/made-with-love/made-with-love.html">
+<link rel="import" href="bower_components/made-with-heart/made-with-heart.html">
 ```
 
 **3 -** Start using it!
@@ -30,14 +30,14 @@ $ bower install made-with-love --save
 ```
 <custom-element-demo>
   <template>
-    <link rel="import" href="made-with-love.html">
+    <link rel="import" href="made-with-heart.html">
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-<made-with-love href="https://simoneas02.github.io/">Simone Amorim</made-with-love>
+<made-with-heart href="https://simoneas02.github.io/">Simone Amorim</made-with-heart>
 ```
 
 ## Properties
@@ -52,10 +52,10 @@ The following custom properties and mixins are available for styling:
 
 Custom property               | Default  | Description
 ---                           | :---:    | ---
---made-with-love-color        | #000     | Text color
---made-with-love-text         | {}       | Text style
---made-with-love-heart-color  | #6309a0  | Heart color
---made-with-love-heart-size   | 10px     | Heart size
+--made-with-heart-text-color  | #000     | Text color
+--made-with-heart-text        | {}       | Text style
+--made-with-heart-color       | #6309a0  | Heart color
+--made-with-heart-size        | 10px     | Heart size
 
 ## Browser Support
 
@@ -85,7 +85,7 @@ $ bower install
 $ polyserve
 ```
 
-Go to [localhost:8080/components/made-with-love/](http://localhost:8080/components/made-with-love/)
+Go to [localhost:8080/components/made-with-heart/](http://localhost:8080/components/made-with-heart/)
 
 ## Tests
 
@@ -103,10 +103,10 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 ## Contributing
 
-Find on our [issues](https://github.com/simoneas02/made-with-love/issues/) the next steps of the project ;)
+Find on our [issues](https://github.com/simoneas02/made-with-heart/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://https://github.com/simoneas02/made-with-love/issues/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://https://github.com/simoneas02/made-with-heart/issues/blob/master/CONTRIBUTING.md).
 
 ## License
 
-[MIT License](https://github.com/simoneas02/made-with-love/blob/master/license.md) © [Simone Amorim](https://simoneas02.github.io)
+[MIT License](https://github.com/simoneas02/made-with-heart/blob/master/license.md) © [Simone Amorim](https://simoneas02.github.io)

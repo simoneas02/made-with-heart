@@ -1,15 +1,16 @@
 {
-  "name": "made-with-love",
-  "version": "0.1.0",
-  "homepage": "https://github.com/simoneas02/made-with-love",
+  "name": "made-with-heart",
+  "version": "0.1.1",
+  "homepage": "https://github.com/simoneas02/made-with-heart",
   "authors": [
     "simoneas02 <simoneas02@hotmail.com>"
   ],
   "description": "A Polymer element for show your love!",
-  "main": "made-with-love.html",
+  "main": "made-with-heart.html",
   "keywords": [
     "Polymer",
     "web-componentes",
+    "heart",
     "love"
   ],
   "license": "MIT",
