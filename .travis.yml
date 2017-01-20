@@ -1,5 +1,9 @@
 language: node_js
-node_js:
-  - stable
+sudo: required
+dist: trusty
+node_js: stable
+before_script:
+  - npm install -g bower polylint
+  - bower install
 script:
-  - "gulp stylint"
+  - polylint
