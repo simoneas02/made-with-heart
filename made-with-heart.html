@@ -1,16 +1,15 @@
 <link rel="import" href="../polymer/polymer.html">
-
 <dom-module id="made-with-heart">
   <template>
     <style>
-      :host {
+       :host {
         --made-with-heart-color-text-default: #000;
         --made-with-heart-color-default: #6309a0;
         --made-with-heart-size-default: 10px;
         color: var(--made-with-heart-text-color, --made-with-heart-color-text-default);
         @apply (--made-with-heart-text);
       }
-
+      
       .heart {
         margin: 0 5px;
         width: var(--made-with-heart-size, var(--made-with-heart-size-default));
@@ -18,9 +17,9 @@
         background-color: var(--made-with-heart-color, var(--made-with-heart-color-default));
         position: relative;
         display: inline-block;
-        animation: pulse .5s infinite alternate ease-in;
+        animation: pulse 1s infinite;
       }
-
+      
       .heart:before {
         width: var(--made-with-heart-size, var(--made-with-heart-size-default));
         height: var(--made-with-heart-size, var(--made-with-heart-size-default));
@@ -31,7 +30,7 @@
         left: 50%;
         content: "";
       }
-
+      
       .heart:after {
         width: var(--made-with-heart-size, var(--made-with-heart-size-default));
         height: var(--made-with-heart-size, var(--made-with-heart-size-default));
@@ -42,29 +41,55 @@
         left: 0;
         content: "";
       }
-
+      
       @keyframes pulse {
-          from {transform: rotate(-135deg) scale(1);}
-          to   {transform: rotate(-135deg) scale(1.2);}
+        0% {
+          transform: rotate(-135deg) scale( .90);
+        }
+        15% {
+          transform: rotate(-135deg) scale( 1);
+        }
+        30% {
+          transform: rotate(-135deg) scale( .90);
+        }
+        40% {
+          transform: rotate(-135deg) scale( 1);
+        }
+        60% {
+          transform: rotate(-135deg) scale( .85);
+        }
+        80% {
+          transform: rotate(-135deg) scale( .85);
+        }
+        90% {
+          transform: rotate(-135deg) scale( .85);
+        }
+        100% {
+          transform: rotate(-135deg) scale( .85);
+        }
       }
-
+      
       a {
         color: var(--made-with-heart-text-color, var(--made-with-heart-color-text-default));
         text-decoration: none;
       }
-    </style>
-    Made with <span class="heart"></span> by <a href$={{href}} target="_blank"><content></content></a>
-  </template>
 
+    </style>
+    Made with <span class="heart"></span> by
+    <a href$={{href}} target="_blank">
+      <content></content>
+    </a>
+  </template>
   <script>
     Polymer({
       is: "made-with-heart",
-      properties:{
+      properties: {
         href: {
           type: String,
           value: "#"
         }
       }
     })
+
   </script>
 </dom-module>
