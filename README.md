@@ -3,7 +3,6 @@
 > <:purple_heart: /> A Polymer element for show your love!.
 
 [![Travis CI Status](https://travis-ci.org/simoneas02/made-with-heart.svg?branch=master)](https://travis-ci.org/simoneas02/made-with-heart)
-![bower](https://img.shields.io/bower/v/made-with-heart.svg)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/simoneas02/made-with-heart)
 
 ## How to install and use:
@@ -83,19 +82,15 @@ $ bower install
 **3 -** Start the development server:
 
 ```sh
-$ polyserve
+$ polymer serve
 ```
 
 Go to [localhost:8080/components/made-with-heart/](http://localhost:8080/components/made-with-heart/)
 
 ## Tests
 
-Linting with polylint:
-
 ```sh
-$ [sudo] npm install -g polylint
-
-$ polylint
+$ polymer lint
 ```
 
 ## Versioning

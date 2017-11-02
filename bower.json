@@ -1,6 +1,6 @@
 {
   "name": "made-with-heart",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/simoneas02/made-with-heart",
   "authors": [
     "simoneas02 <simoneas02@hotmail.com>"
@@ -22,6 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#^1.7.1"
+    "polymer": "Polymer/polymer#^2.0.0"
   }
 }

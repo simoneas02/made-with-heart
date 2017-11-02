@@ -53,18 +53,24 @@
         text-decoration: none;
       }
     </style>
-    Made with <span class="heart"></span> by <a href$={{href}} target="_blank"><content></content></a>
+    Made with <span class="heart"></span> by <a href=[[href]] target="_blank"><slot></slot></a>
   </template>
 
   <script>
-    Polymer({
-      is: "made-with-heart",
-      properties:{
-        href: {
-          type: String,
-          value: "#"
-        }
+    class madeWithHeart extends Polymer.Element {
+
+      static get is() { return 'made-with-heart'; }
+
+      static get properties() {
+        return {
+          href: {
+            type: String,
+            value: "#"
+          }
+        };
       }
-    })
+
+    }
+    window.customElements.define(madeWithHeart.is, madeWithHeart);
   </script>
 </dom-module>
