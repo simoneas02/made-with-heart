@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2017 Simone Amorim, simoneas02.github.io
+Copyright (c) 2017 Simone Amorim, [simoneas02.github.io](https://simoneas02.github.io/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

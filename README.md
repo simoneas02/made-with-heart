@@ -6,19 +6,24 @@
 
 ## How to install and use:
 
-1 - Install the element using [Bower](http://bower.io/):
+**0 -** install the basic dependencies:
+
+- [NodeJS](https://nodejs.org/en/)
+- [Bower](https://www.npmjs.com/package/bower)
+
+**1 -** Install the element using [Bower](http://bower.io/):
 
 ```sh
 $ bower install made-with-heart --save
 ```
 
-2 -  Import the element:
+**2 -** Import the element:
 
 ```html
 <link rel="import" href="bower_components/made-with-heart/made-with-heart.html">
 ```
 
-3 - Start using it!
+**3 -** Start using it!
 
 <!--
 ```
@@ -65,19 +70,19 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11+ | Latest ✔
 
 ## Development
 
-1 - Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
+**1 -** Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
 
 ```sh
-$ [sudo] yarn global add bower polymer-cli
+$ [sudo] npm install -g bower polymer-cli
 ```
 
-2 - Install local dependencies:
+**2 -** Install local dependencies:
 
 ```sh
 $ bower install
 ```
 
-3 - Start the development server:
+**3 -** Start the development server:
 
 ```sh
 $ polymer serve
