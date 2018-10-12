@@ -1,27 +1,35 @@
 {
   "name": "made-with-heart",
-  "version": "0.2.0",
-  "homepage": "https://github.com/simoneas02/made-with-heart",
-  "authors": [
-    "simoneas02 <simoneas02@hotmail.com>"
-  ],
-  "description": "A Polymer element for show your love!",
-  "main": "made-with-heart.html",
+  "description": "&lt;💜 /&gt; A Polymer element for show your love!",
+  "version": "1.0.0",
   "keywords": [
     "Polymer",
-    "web-componentes",
+    "web-components",
     "heart",
     "love"
   ],
-  "license": "MIT",
+  "authors": [
+    "simoneas02"
+  ],
+  "main": "made-with-heart.html",
+  "homepage": "https://github.com/simoneas02/made-with-heart",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/simoneas02/made-with-heart"
+  },
+  "license": "https://github.com/simoneas02/made-with-heart/blob/master/LICENSE.md",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
+  "demos": {
+    "demo": "demo/index.html"
+  },
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0"
   }
 }

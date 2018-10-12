@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <title>made-with-heart demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../made-with-heart.html">
+  </head>
+
+  <body>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        .vertical-section-container {
+          max-width: 500px;
+        }
+      </style>
+    </custom-style>
+
+    <main class="vertical-section-container centered">
+      <h1>made-with-heart demo</h1>
+
+      <!-- Default - demo
+      ========================= -->
+
+      <h2>Default</h2>
+
+      <demo-snippet class="centered-demo">
+        <template>
+
+          <made-with-heart></made-with-heart>
+
+        </template>
+      </demo-snippet>
+
+      <!-- With Prop - demo
+      ========================= -->
+
+      <h2>With Prop</h2>
+
+      <demo-snippet class="centered-demo">
+        <template>
+
+          <made-with-heart textright="Feito com" textleft="por" href="#">Simone Amorim</made-with-heart>
+
+        </template>
+      </demo-snippet>
+
+      <!-- Custom style - demo
+      ========================= -->
+
+      <h2>Custom style</h2>
+
+      <demo-snippet class="centered-demo">
+        <template>
+
+          <style is="custom-style">
+            .shiny {
+              --made-with-heart-text-color: #6309a0;
+              --made-with-heart-color: #00BFFF;
+              --made-with-heart-size: 15px;
+              --made-with-heart-text-size: 30px;
+            }
+          </style>
+
+          <made-with-heart class="shiny">Simone Amorim</made-with-heart>
+
+        </template>
+      </demo-snippet>
+
+    </main>
+
+  </body>
+</html>
